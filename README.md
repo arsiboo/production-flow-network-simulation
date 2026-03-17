@@ -2,6 +2,10 @@
 
 Here I will provide a breath description of the model
 
+## License
+
+This project is licensed under the MIT License.
+
 ## Requirements
 
 - **Python** — version: `3.10.11`
