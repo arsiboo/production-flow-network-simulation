@@ -2,4 +2,4 @@
 
 ## Project Roadmap
 
-![Project roadmap](code_structure_road_map.png)
+![Project roadmap](roadmap.png)
