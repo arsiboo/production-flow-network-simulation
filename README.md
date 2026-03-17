@@ -2,6 +2,13 @@
 
 Here I will provide a breath description of the model
 
+## Requirements
+
+- **Python** — version: `3.10.11`
+- [queueing-tool](https://github.com/djordon/queueing-tool) — version: `1.2.5`
+- [pandas](https://pandas.pydata.org/) — version: `2.2.3`
+- [NumPy](https://numpy.org/) — version: `2.3.5`
+
 ## Project Roadmap
 
 ![Project roadmap](roadmap.png)
