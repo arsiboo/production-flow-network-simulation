@@ -56,6 +56,7 @@ The project begins by preparing and structuring the input data in `production-li
 ## Assumptions
 
 - That there is just one policy defined per control agent in the input file.
+- That the service times are fixed numbers. Alternativeily, I would have used the data and Fitter python package to assign suitable distribution function to each machine/buffer.
 - [Add assumptions]
 
 ## Simplifications
