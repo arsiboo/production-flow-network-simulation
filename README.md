@@ -80,7 +80,7 @@ The project begins by preparing and structuring the input data in `production-li
 ## Results
 
 - [Summarize the main outputs and findings.]
-- [Plots]
+- ![Network Visualisation of Bottlenecks](network.png)
 - [Charts]
 
 ## Key Findings
