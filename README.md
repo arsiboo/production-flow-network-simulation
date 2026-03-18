@@ -22,14 +22,14 @@ The project begins by preparing and structuring the input data in `production-li
 
 ## Code Overview
 
-- **`read.py`**: Loads Excel input data and prepares the network parameters.
-- **`model.py`**: Builds the queueing network model from the input data.
-- **`control_agents.py`**: Defines the fixed-rule controller used during simulation.
-- **`ai_control_agents.py`**: Defines the adaptive controller used during simulation.
-- **`simulation.py`**: Runs the baseline and fixed-controller simulation scenarios.
-- **`simulation_ai.py`**: Runs the baseline and adaptive-controller simulation scenarios.
-- **`monitor.py`**: Collects simulation results and computes performance summaries.
-- **`evaluation.py`**: Compares scenarios and exports the results to Excel.
+- **`read.py`**: Reads data from `production-line.xlsx` Excel file and store it into dictionaries.
+- **`model.py`**: Constructs the queueing network model from the input data, assign queue disciplines, arguments and transition probabilities.
+- **`control_agents.py`**: .
+- **`ai_control_agents.py`**: .
+- **`simulation.py`**: .
+- **`simulation_ai.py`**: .
+- **`monitor.py`**: .
+- **`evaluation.py`**: .
 
 ## Assumptions
 
