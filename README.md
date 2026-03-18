@@ -61,6 +61,7 @@ The project begins by preparing and structuring the input data in `production-li
 - That there is only one type of products. Alternateviely I would inherit the agent class and define product types.
 - That the system vertices have online one indegree, hence I avoid using sharedservers queue discpiline.
 - I separeted the number of servers per machine from the capacities. The aim is for the future just in case they would not be the same in other models.
+- To distiguish the differences, in this model agents are the products, and control agents are the ones changing the arrival rate or update the bottlenck threshold.
 - [Add assumptions and simplifications]
 
 ## Design Choices
