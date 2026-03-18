@@ -58,6 +58,8 @@ The project begins by preparing and structuring the input data in `production-li
 - That there is just one policy defined per control agent in the input file.
 - That the service times are fixed numbers. Alternativeily, I would have used the data and Fitter python package to assign suitable distribution function to each machine/buffer.
 - There is no queue buffer set up for this.
+- That there is only one type of products. Alternateviely I would inherit the agent class and define product types.
+- That the system vertices have online one indegree, hence I avoid using sharedservers queue discpiline. 
 - [Add assumptions and simplifications]
 
 ## Design Choices
