@@ -4,7 +4,7 @@ This project models manufacturing systems as production flow networks. It uses *
 
 ## Pipeline
 
-The project begins by preparing and structuring the input data in `production-line.xlsx`. The `read.py` module reads the input data, and `model.py` constructs production flow as a queueing network and assigns the queue discplines and arguments. The control agents implemented in `base_controller.py`, `control_agents.py` and `ai_control_agents.py` adjust the arrival rates in response to bottlenecks and electricity prices. The queueing network is then simulated using `simulation.py` with different control strategies and without. Simulation data are collected and summarized in `monitor.py`, and `evaluation.py` compares the results and exports them to `outputs.xlsx`. The figure below illustrates the project file structure and workflow roadmap.
+The project begins by preparing and structuring the input data in `production-line.xlsx`. The `read.py` module reads the input data, and `model.py` constructs the production flow as a queueing network and assigns the queue disciplines and arguments. The control agents implemented in `base_controller.py`, `control_agents.py` and `ai_control_agents.py` adjust the arrival rates in response to bottlenecks and electricity prices. The queueing network is then simulated using `simulation.py` with different control strategies and without control. Simulation data are collected and summarized in `monitor.py`, and `evaluation.py` compares the results and exports them to `outputs.xlsx`. The figure below illustrates the project file structure and workflow roadmap.
 
 ![Project roadmap](roadmap.png)
 
@@ -22,7 +22,7 @@ The project begins by preparing and structuring the input data in `production-li
   - **`Edges`**: Contains the connections between vertices and their transition probabilities.
   - **`Controllers`**: Contains the controller rules, thresholds and actions.
 
-- **`output.xlsx`**: Output file containing the simulation results, monitoring summaries and controller states.
+- **`outputs.xlsx`**: Output file containing the simulation results, monitoring summaries and controller states.
   - **`baseline_queue_data`**: Contains the queue level simulation data for the baseline case.
   - **`fixed_queue_data`**: Contains the queue level simulation data for the fixed control case.
   - **`adaptive_queue_data`**: Contains the queue level simulation data for the adaptive control case.
@@ -44,14 +44,14 @@ The project begins by preparing and structuring the input data in `production-li
 
 ## Code Overview
 
-- **`read.py`**: Reads data from `production-line.xlsx` Excel file and store it into dictionaries.
-- **`model.py`**: Constructs the queueing network model from the input data, assign queue disciplines, arguments and transition probabilities.
+- **`read.py`**: Reads data from `production-line.xlsx` Excel file and stores it into dictionaries.
+- **`model.py`**: Constructs the queueing network model from the input data, assigns queue disciplines, arguments and transition probabilities.
 - **`base_controller.py`**: Defines the shared logic used by the control agents to read controller rules, observe system states and adjust the source arrival process.
-- **`control_agents.py`**: Defines control agents that check buffer and electricity threshold conditions during the simulation and adjust the source arrival rate according the policies defined in `production-line.xlsx`.
+- **`control_agents.py`**: Defines control agents that check buffer and electricity threshold conditions during the simulation and adjust the source arrival rate according to the policies defined in `production-line.xlsx`.
 - **`ai_control_agents.py`**: Defines adaptive control agents that check buffer and electricity threshold conditions during the simulation and adjust the source arrival rate using an adaptive bottleneck threshold.
-- **`simulation.py`**: Runs the simulation with and without fixed control agents and stores the outputs of both cases.
-- **`simulation_ai.py`**: Runs the simulation with and without adaptive control agents and stores the outputs of both cases.
+- **`simulation.py`**: Runs the baseline, fixed control and adaptive control simulation cases and stores the outputs of all cases.
 - **`monitor.py`**: Collects simulation data from the queueing network and summarizes the main performance measures of the production line.
+- **`evaluation.py`**: Runs all simulation cases, compares their results and exports the outputs to `outputs.xlsx`.
 
 ## Assumptions
 
@@ -72,10 +72,10 @@ The project begins by preparing and structuring the input data in `production-li
 1. Download or clone the project files from GitHub.
 2. Open the project folder in your preferred Python IDE, such as PyCharm or VS Code.
 3. Make sure the required libraries are installed.
-5. In `model.py`, change `max_agents` inside `build_queue_network()` if you want to change the maximum number of products entering the system.
-6. In `evaluation.py`, change the `total_time` and `step_size` values if you want to change the simulation duration and control update interval.
-7. Run `evaluation.py`.
-8. Check `output.xlsx` for the simulation results, monitoring summaries and controller states.
+4. In `model.py`, change `max_agents` inside `build_queue_network()` if you want to change the maximum number of products entering the system.
+5. In `evaluation.py`, change the `total_time` and `step_size` values if you want to change the simulation duration and control update interval.
+6. Run `evaluation.py`.
+7. Check `outputs.xlsx` for the simulation results, monitoring summaries and controller states.
 
 ## Results
 
