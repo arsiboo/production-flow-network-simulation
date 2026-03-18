@@ -86,11 +86,13 @@ The project begins by preparing and structuring the input data in `production-li
 
 [Summarize the main outputs and findings.]
 
-![Network Visualisation of Bottlenecks](network.png)
+![Network Visualisation](network.png)
 
-![Matrix Visualisation of Bottlenecks](adjacency.png)
+![Matrix Visualisation](adjacency.png)
 
-![Occupancy Visualisation of Bottlenecks](occupancy.png)
+![Occupancy Visualisation](occupancy.png)
+
+![Throughput Visualisation](occupancy.png)
 
 
 ## Key Findings
