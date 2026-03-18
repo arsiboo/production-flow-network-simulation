@@ -1,6 +1,6 @@
 # Manufacturing System
 
-Maufacturing system is a network-agnostic computational appraoch 
+Production flow network model is a network-agnostic computational appraoch 
 
 ## Pipeline
 
