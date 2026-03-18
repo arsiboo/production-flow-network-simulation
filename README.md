@@ -53,20 +53,19 @@ The project begins by preparing and structuring the input data in `production-li
 - **`monitor.py`**: Collects simulation data from the queueing network and summarizes the main performance measures of the production line.
 - **`evaluation.py`**: Runs all simulation cases, compares their results and exports the outputs to `outputs.xlsx`.
 
-## Assumptions
+## Assumptions and Simplifications
 
 - That there is just one policy defined per control agent in the input file.
 - That the service times are fixed numbers. Alternativeily, I would have used the data and Fitter python package to assign suitable distribution function to each machine/buffer.
-- [Add assumptions]
-
-## Simplifications
-
-- [Add simplifications]
-- [Add simplifications]
+- [Add assumptions and simplifications]
 
 ## Design Choices
 
+- Flow Network representation of system to handle future complexity
+- LossQueue, NullQueue and QueueServer are embedded based on vertices types.
+- 
 - [Explain key modeling or implementation choices]
+  
 
 ## How to Run
 
