@@ -2,6 +2,64 @@
 
 Here I provide a brief description of the model.
 
+## Pipeline and Tools
+
+[Describe the overall workflow of the project.]
+
+Example:
+- Input data preparation
+- Queueing network construction
+- Simulation execution
+- Monitoring and performance evaluation
+- Scenario comparison and result export
+
+### Tools and Libraries
+- [Python]
+- [queueing-tool]
+- [pandas]
+- [NumPy]
+
+## Assumptions, Simplifications, and Design Choices
+
+### Assumptions
+- [Add assumptions]
+- [Add assumptions]
+
+### Simplifications
+- [Add simplifications]
+- [Add simplifications]
+
+### Design Choices
+- [Explain key modelling or implementation choices]
+
+## Results
+
+[Summarize the main outputs and findings.]
+
+### Included Outputs
+- [Plots]
+- [Charts]
+- [Tables]
+- [Logs]
+
+### Key Findings
+- [Add key result]
+- [Add key result]
+
+## What Worked Well
+
+- [Add point]
+- [Add point]
+
+## What Did Not Work Well
+
+- [Add point]
+- [Add point]
+
+## Why
+
+[Explain why some parts worked well and why some parts were limited or challenging.]
+
 ## License
 
 This project is licensed under the MIT License.
