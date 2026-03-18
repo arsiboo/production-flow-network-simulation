@@ -55,7 +55,7 @@ The project begins by preparing and structuring the input data in `production-li
 
 ## Assumptions
 
-- [Add assumptions]
+- That there is just one policy defined per control agent in the input file.
 - [Add assumptions]
 
 ## Simplifications
