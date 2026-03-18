@@ -4,7 +4,7 @@ This project models manufacturing systems as production flow networks. It uses *
 
 ## Pipeline
 
-The project begins by preparing and structuring the input data in `production-line.xlsx`. The `read.py` module reads the input data, and `model.py` constructs and parameterizes the production flow as a queueing network. The control agents implemented in `base_controller.py`, `control_agents.py` and `ai_control_agents.py` adjust the arrival rates in response to bottlenecks and electricity prices. The queueing network is then simulated using `simulation.py` and `simulation_ai.py` under different control strategies. Simulation data are collected and summarized in `monitor.py`, and `evaluation.py` compares the results and exports them to `evaluation_ai_outputs.xlsx`. The figure below illustrates the project file structure and workflow roadmap.
+The project begins by preparing and structuring the input data in `production-line.xlsx`. The `read.py` module reads the input data, and `model.py` constructs production flow as a queueing network and assigns the queue discplines and arguments. The control agents implemented in `base_controller.py`, `control_agents.py` and `ai_control_agents.py` adjust the arrival rates in response to bottlenecks and electricity prices. The queueing network is then simulated using `simulation.py` with different control strategies and without. Simulation data are collected and summarized in `monitor.py`, and `evaluation.py` compares the results and exports them to `outputs.xlsx`. The figure below illustrates the project file structure and workflow roadmap.
 
 ![Project roadmap](roadmap.png)
 
