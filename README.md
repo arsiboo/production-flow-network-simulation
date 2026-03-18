@@ -37,37 +37,27 @@ The project begins by preparing and structuring the input data in `production-li
 - **`evaluation.py`:** Compares scenarios and exports the results to Excel.
 
 
-## Example:
-- Input data preparation
-- Queueing network construction
-- Simulation execution
-- Monitoring and performance evaluation
-- Scenario comparison and result export
+## Assumptions
 
-## Assumptions, Simplifications, and Design Choices
-
-### Assumptions
 - [Add assumptions]
 - [Add assumptions]
 
-### Simplifications
+## Simplifications
+
 - [Add simplifications]
 - [Add simplifications]
 
-### Design Choices
+## Design Choices
+
 - [Explain key modelling or implementation choices]
 
 ## Results
 
-[Summarize the main outputs and findings.]
-
-### Included Outputs
+- [Summarize the main outputs and findings.]
 - [Plots]
 - [Charts]
-- [Tables]
-- [Logs]
 
-### Key Findings
+## Key Findings
 - [Add key result]
 - [Add key result]
 
@@ -76,11 +66,7 @@ The project begins by preparing and structuring the input data in `production-li
 - [Add point]
 - [Add point]
 
-## What Did Not Work Well
+## What Did Not Work Well and why
 
 - [Add point]
 - [Add point]
-
-## Why
-
-[Explain why some parts worked well and why some parts were limited or challenging.]
