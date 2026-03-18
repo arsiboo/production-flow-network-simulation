@@ -24,8 +24,8 @@ The project begins by preparing and structuring the input data in `production-li
 
 - **`read.py`**: Reads data from `production-line.xlsx` Excel file and store it into dictionaries.
 - **`model.py`**: Constructs the queueing network model from the input data, assign queue disciplines, arguments and transition probabilities.
-- **`control_agents.py`**: .
-- **`ai_control_agents.py`**: .
+- **`control_agents.py`**: Defines control agents that check buffer and electricity threshold conditions during the simulation and adjust the source arrival rate according the policies defined in `production-line.xlsx`.
+- **`ai_control_agents.py`**: Defines adaptive control agents that check buffer and electricity threshold conditions during the simulation and adjust the source arrival rate using an adaptive bottleneck threshold.
 - **`simulation.py`**: .
 - **`simulation_ai.py`**: .
 - **`monitor.py`**: .
