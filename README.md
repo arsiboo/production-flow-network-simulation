@@ -100,4 +100,4 @@ The project begins by preparing and structuring the input data in `production-li
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
