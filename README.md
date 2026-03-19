@@ -56,7 +56,7 @@ The project begins by preparing and structuring the input data in `production-li
 ## Assumptions and Simplifications
 
 - That there is only one policy defined per control agent in the input file.
-- That the service times are fixed numbers. Alternatively, I would use data and the Fitter Python package to assign a suitable distribution function to each machine or buffer.
+- That the service times are fixed numbers. Alternatively, I would use data and the **Fitter** Python package to assign a suitable distribution function to each machine or buffer.
 - There is no queue buffer setup in this model.
 - That there is only one type of product. Alternatively, I would inherit the agent class and define product types.
 - That the system vertices each have only one incoming edge, so I avoid using the SharedServer queue discipline.
@@ -70,6 +70,7 @@ The project begins by preparing and structuring the input data in `production-li
 - Flow network representation of the system to handle future complexity.
 - `LossQueue`, `NullQueue`, and `QueueServer` are embedded based on vertex types.
 - The number of servers and capacities are defined separately.
+- Distribution probabilities are assigned to each edge.
 
 
 ## How to Run
@@ -168,7 +169,10 @@ The project begins by preparing and structuring the input data in `production-li
 
 ## What Worked Well
 
-- [Add point]
+- Data preparation and network construction.
+- Queue discpline and argument implementation as well as network quantification.
+- Network simulation.
+- Mostly, control agent development (needs improvement)
 
 ## What Did Not Work Well and Why
 
