@@ -96,6 +96,8 @@ The project begins by preparing and structuring the input data in `production-li
 
 ![Waiting Time Visualisation](waiting_time.png)
 
+![Control Agents Behaviour](control_agents_behaviour.png)
+
 
 ## Key Findings
 
