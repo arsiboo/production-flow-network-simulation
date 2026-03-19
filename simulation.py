@@ -5,6 +5,7 @@ from control_agents import SimulationController
 from ai_control_agents import AdaptiveSimulationController
 from read import controller_df
 
+
 def shared_simulation_setup(controller_class):
     queue_network, DG = build_queue_network()
     controller = controller_class(queue_network, controller_df)
@@ -18,10 +19,12 @@ def shared_simulation_setup(controller_class):
 def run_simulation(use_agents, total_time=500, step_size=50):
     queue_network, DG, controller = shared_simulation_setup(SimulationController)
     controller_rows = []
+    elapsed_time = 0
 
-    for current_time in range(step_size, total_time + step_size, step_size):
-        queue_network.simulate(t=current_time)
-        controller.set_current_time(current_time)
+    for _ in range(step_size, total_time + step_size, step_size):
+        queue_network.simulate(t=step_size)
+        elapsed_time += step_size
+        controller.set_current_time(elapsed_time)
 
         if use_agents:
             bottleneck_state = controller.observe_state("Bottleneck_manager")
@@ -53,7 +56,7 @@ def run_simulation(use_agents, total_time=500, step_size=50):
             energy_action = "no_agents"
 
         controller_rows.append([
-            current_time,
+            elapsed_time,
             bottleneck_state,
             bottleneck_triggered,
             bottleneck_action,
@@ -93,13 +96,16 @@ def run_simulation(use_agents, total_time=500, step_size=50):
         "controller_state": controller_state_df
     }
 
+
 def run_simulation_ai(use_agents, total_time=500, step_size=50):
     queue_network, DG, controller = shared_simulation_setup(AdaptiveSimulationController)
     controller_rows = []
+    elapsed_time = 0
 
-    for current_time in range(step_size, total_time + step_size, step_size):
-        queue_network.simulate(t=current_time)
-        controller.set_current_time(current_time)
+    for _ in range(step_size, total_time + step_size, step_size):
+        queue_network.simulate(t=step_size)
+        elapsed_time += step_size
+        controller.set_current_time(elapsed_time)
 
         if use_agents:
             controller.update_adaptive_threshold()
@@ -133,7 +139,7 @@ def run_simulation_ai(use_agents, total_time=500, step_size=50):
             energy_action = "no_agents"
 
         controller_rows.append([
-            current_time,
+            elapsed_time,
             bottleneck_state,
             bottleneck_triggered,
             bottleneck_action,
