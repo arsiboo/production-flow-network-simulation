@@ -105,7 +105,6 @@ The project begins by preparing and structuring the input data in `production-li
 
 **Measures**
 - **buffer** -> `max_num_total / capacity`
-- **machine** -> `max(machine_utilization)`
 
 ![Matrix Visualisation](adjacency.png)
 
@@ -119,7 +118,6 @@ The project begins by preparing and structuring the input data in `production-li
 
 **Measures**
 - `mean(num_total)` per `event_time`
-- moving average applied for smoothing
 
 ![Occupancy Visualisation](occupancy.png)
 
@@ -161,11 +159,6 @@ The project begins by preparing and structuring the input data in `production-li
 - `simulation_time` = controller check times
 - `bottleneck_triggered` / `energy_triggered` = whether each agent was triggered at that check
 - `bottleneck_action` / `energy_action` = action taken at that check
-
-**Action encoding**
-- `0` -> `no_action`
-- `1` -> `normal_arrival_rate`
-- `2` -> `reduce_arrival_rate`
 
 ![Control Agents Behaviour](control_agents_behaviour.png)
 
