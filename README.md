@@ -92,7 +92,7 @@ The project begins by preparing and structuring the input data in `production-li
 
 ![Occupancy Visualisation](occupancy.png)
 
-![Throughput Visualisation](occupancy.png)
+![Throughput Visualisation](throughput.png)
 
 
 ## Key Findings
