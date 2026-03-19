@@ -69,7 +69,8 @@ The project begins by preparing and structuring the input data in `production-li
 
 - Flow network representation of the system to handle future complexity.
 - `LossQueue`, `NullQueue`, and `QueueServer` are embedded based on vertex types.
-- [Explain key modeling or implementation choices]
+- The number of servers and capacities are defined separately.
+
 
 ## How to Run
 
