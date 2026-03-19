@@ -64,6 +64,7 @@ The project begins by preparing and structuring the input data in `production-li
 - To distiguish the differences, in this model agents are the products, and control agents are the ones changing the arrival rate or update the bottlenck threshold.
 - That the products move themselves from a vertex to vertex.
 - That the products are being removed from sink themselves and no leaving rate is assigned.
+- The model assumes that the network is single-commodity where the products enter from a single source and leave from a single sink.
 
 ## Design Choices
 
