@@ -94,6 +94,8 @@ The project begins by preparing and structuring the input data in `production-li
 
 ![Throughput Visualisation](throughput.png)
 
+![Waiting Time Visualisation](waiting_time.png)
+
 
 ## Key Findings
 
