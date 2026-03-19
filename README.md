@@ -145,7 +145,6 @@ The project begins by preparing and structuring the input data in `production-li
 **Measures**
 - `waiting_time = service - arrival`
 - mean(`waiting_time`) per `event_time`
-- moving average applied for smoothing
 
 ![Waiting Time Visualisation](waiting_time.png)
 
