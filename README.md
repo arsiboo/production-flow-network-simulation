@@ -62,7 +62,8 @@ The project begins by preparing and structuring the input data in `production-li
 - That the system vertices have online one indegree, hence I avoid using sharedservers queue discpiline.
 - I separeted the number of servers per machine from the capacities. The aim is for the future just in case they would not be the same in other models.
 - To distiguish the differences, in this model agents are the products, and control agents are the ones changing the arrival rate or update the bottlenck threshold.
-- [Add assumptions and simplifications]
+- That the products move themselves from a vertex to vertex.
+- That the products are being removed from sink themselves and no leaving rate is assigned.
 
 ## Design Choices
 
