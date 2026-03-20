@@ -90,12 +90,12 @@ The project begins by preparing and structuring the input data in `production-li
 ### Network
 
 **Sheets used**
-- `outputs.xlsx` -> `baseline_queue_data`, `fixed_queue_data`, `adaptive_queue_data`
-- `production-line.xlsx` -> `Vertices`, `Edges`
+- **outputs.xlsx**: `baseline_queue_data`, `fixed_queue_data`, `adaptive_queue_data`
+- **production-line.xlsx**: `Vertices`, `Edges`
 
 **Measures**
-- **buffer** -> `max_num_total / buffer_capacity`
-- **machine** -> `max(machine_utilization)`
+- **buffer**: `max_num_total / buffer_capacity`
+- **machine**: `max(machine_utilization)`
 
 ![Network Visualisation](network.png)
 
@@ -104,8 +104,8 @@ The project begins by preparing and structuring the input data in `production-li
 ### Matrix
 
 **Sheets used**
-- `outputs.xlsx` -> `baseline_queue_data`, `fixed_queue_data`, `adaptive_queue_data`
-- `production-line.xlsx` -> `Vertices`, `Edges`
+- **outputs.xlsx**: `baseline_queue_data`, `fixed_queue_data`, `adaptive_queue_data`
+- **production-line.xlsx**: `Vertices`, `Edges`
 
 **Measures**
 - **buffer** -> `max_num_total / capacity`
@@ -117,8 +117,8 @@ The project begins by preparing and structuring the input data in `production-li
 ### Occupancy
 
 **Sheets used**
-- `outputs.xlsx` -> `baseline_queue_data`, `fixed_queue_data`, `adaptive_queue_data`
-- `production-line.xlsx` -> `Vertices`
+- **outputs.xlsx**: `baseline_queue_data`, `fixed_queue_data`, `adaptive_queue_data`
+- **production-line.xlsx**: `Vertices`
 
 **Measures**
 - `mean(num_total)` per `event_time`
@@ -130,11 +130,11 @@ The project begins by preparing and structuring the input data in `production-li
 ### Throughput
 
 **Sheets used**
-- `outputs.xlsx` -> `baseline_monitoring_summary`, `fixed_monitoring_summary`, `adaptive_monitoring_summary`
+- **outputs.xlsx**: `baseline_monitoring_summary`, `fixed_monitoring_summary`, `adaptive_monitoring_summary`
 
 **Measures**
-- `throughput_count` = count of completed products reaching the Sink
-- `throughput_rate` = `throughput_count / simulation_time`
+- **throughput_count**: count of completed products reaching the Sink
+- **throughput_rate**: `throughput_count / simulation_time`
 
 ![Throughput Visualisation](throughput.png)
 
@@ -143,10 +143,10 @@ The project begins by preparing and structuring the input data in `production-li
 ### Waiting Time
 
 **Sheets used**
-- `outputs.xlsx` -> `baseline_queue_data`, `fixed_queue_data`, `adaptive_queue_data`
+- **outputs.xlsx**: `baseline_queue_data`, `fixed_queue_data`, `adaptive_queue_data`
 
 **Measures**
-- `waiting_time = service - arrival`
+- **waiting_time**: `service - arrival`
 - mean(`waiting_time`) per `event_time`
 
 ![Waiting Time Visualisation](waiting_time.png)
@@ -156,10 +156,10 @@ The project begins by preparing and structuring the input data in `production-li
 ### Controller Behaviour
 
 **Sheets used**
-- `outputs.xlsx` -> `fixed_controller_state`, `adaptive_controller_state`
+- **outputs.xlsx**: `fixed_controller_state`, `adaptive_controller_state`
 
 **Measures**
-- `simulation_time` = controller check times
+- **simulation_time**: controller check times
 - `bottleneck_triggered` / `energy_triggered` = whether each agent was triggered at that check
 - `bottleneck_action` / `energy_action` = action taken at that check
 
