@@ -97,7 +97,7 @@ The project begins by preparing and structuring the input data in `production-li
 - **buffer**: `max_num_total / buffer_capacity`
 - **machine**: `max(machine_utilization)`
 
-![Network Visualisation](network.png)
+![Network Visualisation](outputs/network.png)
 
 ---
 
