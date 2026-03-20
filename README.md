@@ -44,11 +44,13 @@ The project begins by preparing and structuring the input data in `production-li
 
 ## Code Overview
 
-- **`read.py`**: Reads data from the `production-line.xlsx` file and stores it in dictionaries.
+## Project structure
+
+- **`read.py`**: Reads data from `production-line.xlsx` and stores it in dictionaries.
 - **`model.py`**: Constructs the queueing network model from the input data and assigns queue disciplines, arguments, and transition probabilities.
-- **`base_controller.py`**: Defines the shared logic used by the control agents to read controller rules, observe system states, and adjust the source arrival process.
-- **`control_agents.py`**: Defines control agents that check buffer and electricity thresholds during the simulation and adjust the source arrival rate according to the policies defined in `production-line.xlsx`.
-- **`ai_control_agents.py`**: Defines adaptive control agents that check buffer thresholds during the simulation, adjust the threshold bottleneck threshold, and then decide whether to adjust the source arrival rate.
+- **`base_controller.py`**: Defines the `BaseController` base class with the shared logic used by the control agents to read controller rules, observe system states, and adjust the source arrival process.
+- **`control_agents.py`**: Defines a fixed control agent class derived from `BaseController` that checks buffer and electricity thresholds during the simulation and adjusts the source arrival rate according to the policies defined in `production-line.xlsx`.
+- **`ai_control_agents.py`**: Defines one adaptive control agent class derived from `BaseController` that checks buffer thresholds during the simulation, adjusts the bottleneck threshold, and then decides whether to adjust the source arrival rate.
 - **`simulation.py`**: Runs the baseline, fixed control, and adaptive control simulation cases and stores the outputs of all cases.
 - **`monitor.py`**: Collects simulation data from the queueing network as well as monitoring summary, machines summary, buffer summary, bottleneck, and controller states.
 - **`evaluation.py`**: Runs all simulation cases and exports the outputs to `outputs.xlsx`.
