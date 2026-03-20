@@ -1,6 +1,6 @@
 # Manufacturing System
 
-This project models manufacturing systems as production flow networks. It uses **queueing-tool**, a Python library for event-based queueing network simulation, to represent and simulate product flow through manufacturing systems of varying sizes and complexities. The modeling approach is intended to support a wide range of manufacturing layouts, however the implementation uses a simplified production line structure.
+This project models manufacturing systems as production flow networks. It uses **queueing-tool**, a Python library for event-based queueing network simulation, to represent and simulate product flow through manufacturing systems of varying sizes and complexities. The modeling approach is intended to support a wide range of manufacturing structure, however the implementation uses a simplified production line structure.
 
 ## Pipeline
 
