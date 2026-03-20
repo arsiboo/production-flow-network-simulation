@@ -159,9 +159,8 @@ The project begins by preparing and structuring the input data in `production-li
 - **outputs.xlsx**: `fixed_controller_state`, `adaptive_controller_state`
 
 **Measures**
-- **simulation_time**: controller check times
-- `bottleneck_triggered` / `energy_triggered` = whether each agent was triggered at that check
-- `bottleneck_action` / `energy_action` = action taken at that check
+- `bottleneck_triggered` / `energy_triggered`
+- `bottleneck_action` / `energy_action`
 
 ![Control Agents Behaviour](control_agents_behaviour.png)
 
