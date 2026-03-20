@@ -165,7 +165,12 @@ The project begins by preparing and structuring the input data in `production-li
 
 ## Key Findings
 
-- [Add key result]
+- The network visualisation indicates that Machine A and Machine B encountered overflow.
+- The adjacency heatmap indicates that the path from Machine A to Buffer did not reach full capacity.
+- The occupancy line charts indicate more nonlinearity in Machine A despite the scenario.
+- The throughput summary indicates no significant changes after adjusting the arrival rates.
+- The waiting time line chart indicates that the Baseline scenario had longer waiting time, whereas the fixed scenario had less waiting time.
+- The controller agents show similar behaviour in both scenarios.
 
 ## What Worked Well
 
