@@ -133,7 +133,6 @@ The project begins by preparing and structuring the input data in `production-li
 - **outputs.xlsx**: `baseline_monitoring_summary`, `fixed_monitoring_summary`, `adaptive_monitoring_summary`
 
 **Measures**
-- **throughput_count**: count of completed products reaching the Sink
 - **throughput_rate**: `throughput_count / simulation_time`
 
 ![Throughput Visualisation](throughput.png)
