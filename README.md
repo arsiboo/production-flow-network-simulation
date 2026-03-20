@@ -6,7 +6,7 @@ This project models manufacturing systems as production flow networks. It uses *
 
 The project begins by preparing and structuring the input data in `production-line.xlsx`. The `read.py` module reads the input data, and `model.py` constructs the production flow as a queueing network and assigns the queue disciplines and arguments. The control agents implemented in `base_controller.py`, `control_agents.py`, and `ai_control_agents.py` adjust the arrival rates in response to bottlenecks and electricity prices. The queueing network is then simulated using `simulation.py` with different control strategies and without control. Simulation data are collected and summarized in `monitor.py`, and `evaluation.py` compares the results and exports them to `outputs.xlsx`. The figure below illustrates the project file structure and workflow roadmap.
 
-![Project roadmap](roadmap.png)
+![Project roadmap](outputs/roadmap.png)
 
 ## Tools and Libraries
 
@@ -110,7 +110,7 @@ The project begins by preparing and structuring the input data in `production-li
 **Measures**
 - **buffer** -> `max_num_total / capacity`
 
-![Matrix Visualisation](adjacency.png)
+![Matrix Visualisation](outputs/adjacency.png)
 
 ---
 
@@ -123,7 +123,7 @@ The project begins by preparing and structuring the input data in `production-li
 **Measures**
 - `mean(num_total)` per `event_time`
 
-![Occupancy Visualisation](occupancy.png)
+![Occupancy Visualisation](outputs/occupancy.png)
 
 ---
 
@@ -135,7 +135,7 @@ The project begins by preparing and structuring the input data in `production-li
 **Measures**
 - **throughput_rate**: `throughput_count / simulation_time`
 
-![Throughput Visualisation](throughput.png)
+![Throughput Visualisation](outputs/throughput.png)
 
 ---
 
@@ -148,7 +148,7 @@ The project begins by preparing and structuring the input data in `production-li
 - **waiting_time**: `service - arrival`
 - mean(`waiting_time`) per `event_time`
 
-![Waiting Time Visualisation](waiting_time.png)
+![Waiting Time Visualisation](outputs/waiting_time.png)
 
 ---
 
@@ -161,7 +161,7 @@ The project begins by preparing and structuring the input data in `production-li
 - `bottleneck_triggered` / `energy_triggered`
 - `bottleneck_action` / `energy_action`
 
-![Control Agents Behaviour](control_agents_behaviour.png)
+![Control Agents Behaviour](outputs/control_agents_behaviour.png)
 
 ## Key Findings
 
