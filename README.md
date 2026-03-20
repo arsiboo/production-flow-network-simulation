@@ -1,10 +1,10 @@
 # Manufacturing System
 
-This project models manufacturing systems as production flow networks. It uses **queueing-tool**, a Python library for agent-based network simulation, to represent and simulate product flow through manufacturing systems of varying sizes and complexities. The modeling approach is intended to support a wide range of manufacturing layouts, although the implementation uses a simplified production line structure.
+This project models manufacturing systems as production flow networks. It uses **queueing-tool**, a Python library for event-based queueing network simulation, to represent and simulate product flow through manufacturing systems of varying sizes and complexities. The modeling approach is intended to support a wide range of manufacturing layouts, however the implementation uses a simplified production line structure.
 
 ## Pipeline
 
-The project begins by preparing and structuring the input data in `production-line.xlsx`. The `read.py` module reads the input data, and `model.py` constructs the production flow as a queueing network and assigns the queue disciplines, arguments, and transition probabilities. The control agents implemented in `base_controller.py`, `control_agents.py`, and `ai_control_agents.py` adjust the arrival rates in response to bottlenecks and electricity prices. The queueing network is then simulated using `simulation.py` with different control strategies and without control. Simulation data are collected and summarized in `monitor.py`, and `evaluation.py` compares the results and exports them to `outputs.xlsx`. The figure below illustrates the project file structure and workflow roadmap.
+The project begins by preparing and structuring the input data in `production-line.xlsx`. The `read.py` module reads the input data, and `model.py` constructs the production flow as a queueing network and assigns the queue disciplines, arguments, and transition probabilities. The control agents implemented in `base_controller.py`, `control_agents.py`, and `ai_control_agents.py` adjust the arrival rates according to the bottlenecks and electricity prices. The queueing network is then simulated using `simulation.py` with and without control agents. Simulation data are collected and summarized in `monitor.py`, and `evaluation.py` write the results into the `outputs.xlsx`. The figure below illustrates the project file structure and workflow roadmap.
 
 ![Project roadmap](outputs/roadmap.png)
 
@@ -78,8 +78,8 @@ The project begins by preparing and structuring the input data in `production-li
 ## How to Run
 
 1. Download or clone the project files from GitHub.
-2. Open the project folder in your preferred Python IDE, such as PyCharm or VS Code.
-3. Make sure the required libraries are installed.
+2. Open the project folder in your preferred Python IDE. I used PyCharm.
+3. Make sure the required libraries are installed based on their indicated versions.
 4. In `model.py`, change `max_agents` inside `build_queue_network()` if you want to change the maximum number of products entering the system.
 5. In `evaluation.py`, change the `total_time` and `step_size` values if you want to change the simulation duration and control update interval.
 6. Run `evaluation.py`.
@@ -108,7 +108,7 @@ The project begins by preparing and structuring the input data in `production-li
 - **production-line.xlsx**: `Vertices`, `Edges`
 
 **Measures**
-- **buffer** -> `max_num_total / capacity`
+- **buffer**: `max_num_total / capacity`
 
 ![Matrix Visualisation](outputs/adjacency.png)
 
