@@ -189,3 +189,7 @@ The project begins by preparing and structuring the input data in `production-li
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## Related Work
+
+Previously, I used `queueing-tool` in an agent-based network simulation project for Akademiska Sjukhuset ([repository](https://github.com/arsiboo/Agent-Based-Network-Simulation-Combined-Network-Algorithm)). I also proposed a dynamic nonlinear flow algorithm to model patient flow ([paper](https://www.nature.com/articles/s41598-025-96536-z)). Similarly, I proposed a dynamic production flow algorithm for manufacturing systems, which is currently under submission.
