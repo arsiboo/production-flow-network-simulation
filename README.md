@@ -174,14 +174,14 @@ The project begins by preparing and structuring the input data in `production-li
 
 ## What Worked Well
 
-- Data preparation and network construction.
-- Queue discipline and argument implementation as well as network quantification.
-- Network simulation.
-- Mostly, control agent development (needs improvement)
+- Data preparation and network construction worked well.
+- Queue discipline and argument implementation, as well as network quantification, worked well.
+- Network simulation worked well.
+- Mostly, the control agent development worked well, but it still needs improvement.
 
 ## What Did Not Work Well and Why
 
-- The `queueing-tool` structure is such that the simulation is run through a single function. This requires defining a `run_simulation` function in order to observe and apply changes while the simulation is running:
+- The `queueing-tool` structure indicates that the simulation is run through a single function. This requires defining a `run_simulation` function in order to observe and apply changes while the simulation is running:
   - It increases the model complexity.
   - It requires defining a `step_size` variable to indicate how often changes should be observed and applied. A low value may slow down the program, while a high value may cause the program to ignore bottlenecks.
 - The model still includes a few hardcoded assumptions, such as the electricity price and the entry edge type used during initialization.
