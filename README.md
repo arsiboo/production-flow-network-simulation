@@ -42,8 +42,6 @@ The project begins by preparing and structuring the input data in `production-li
   - **`fixed_controller_state`**: Contains the controller states for the fixed control case.
   - **`adaptive_controller_state`**: Contains the controller states for the adaptive control case.
 
-## Code Overview
-
 ## Project structure
 
 - **`read.py`**: Reads data from `production-line.xlsx` and stores it in dictionaries.
