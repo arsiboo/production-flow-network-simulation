@@ -107,6 +107,8 @@ The project begins by preparing and structuring the input data in `production-li
 
 **Measures**
 - **buffer**: `max_num_total / capacity`
+- **machine**: `max(machine_utilization)`
+
 
 ![Matrix Visualisation](outputs/adjacency.png)
 
