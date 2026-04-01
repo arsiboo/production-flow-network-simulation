@@ -192,4 +192,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Related Work
 
-Previously, I used `queueing-tool` in an agent-based network simulation project for Akademiska Sjukhuset ([repository](https://github.com/arsiboo/Agent-Based-Network-Simulation-Combined-Network-Algorithm)). I also proposed a dynamic nonlinear flow algorithm to model patient flow ([repository](https://github.com/arsiboo/Dynamic-Nonlinear-Flow-Algorithm)). Similarly, I proposed a dynamic production flow algorithm for manufacturing systems, which is currently under submission.
+Previously, I used `queueing-tool` in an agent-based network simulation project for Akademiska Sjukhuset ([repository](https://github.com/arsiboo/Agent-Based-Network-Simulation-Combined-Network-Algorithm)). I also proposed a dynamic nonlinear flow algorithm to model patient flow ([repository](https://github.com/arsiboo/Dynamic-Nonlinear-Flow-Algorithm)).
